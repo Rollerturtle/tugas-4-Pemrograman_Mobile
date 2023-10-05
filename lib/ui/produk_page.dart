@@ -44,20 +44,32 @@ class _ProdukPageState extends State<ProdukPage> {
                 produk: Produk(
                     id: 1,
                     kodeProduk: 'A001',
-                    namaProduk: 'Kamera Sony',
+                    namaProduk: 'Kamera Aldo',
                     hargaProduk: 6000000)),
             ItemProduk(
                 produk: Produk(
                     id: 2,
                     kodeProduk: 'A002',
-                    namaProduk: 'Kompor LG 2 Pintu',
+                    namaProduk: 'Kulkas Samsung 2 Pintu',
                     hargaProduk: 2500000)),
             ItemProduk(
                 produk: Produk(
                     id: 3,
                     kodeProduk: 'A003',
-                    namaProduk: 'Mesin Las',
+                    namaProduk: 'Bor Listrik',
                     hargaProduk: 2000000)),
+            ItemProduk(
+                produk: Produk(
+                    id: 3,
+                    kodeProduk: 'A004',
+                    namaProduk: 'Lemari Piring',
+                    hargaProduk: 500000)),
+            ItemProduk(
+                produk: Produk(
+                    id: 3,
+                    kodeProduk: 'A005',
+                    namaProduk: 'Electric Dishwasher',
+                    hargaProduk: 5000000)),
           ],
         ));
   }
