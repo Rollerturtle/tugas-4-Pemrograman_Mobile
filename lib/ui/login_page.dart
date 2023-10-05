@@ -43,14 +43,12 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  //Membuat Textbox email
   Widget _emailTextField() {
     return TextFormField(
       decoration: const InputDecoration(labelText: "Email"),
       keyboardType: TextInputType.emailAddress,
       controller: _emailTextboxController,
       validator: (value) {
-        //validasi harus diisi
         if (value!.isEmpty) {
           return 'Email harus diisi';
         }
@@ -59,7 +57,6 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  //Membuat Textbox password
   Widget _passwordTextField() {
     return TextFormField(
       decoration: const InputDecoration(labelText: "Password"),
@@ -67,7 +64,6 @@ class _LoginPageState extends State<LoginPage> {
       obscureText: true,
       controller: _passwordTextboxController,
       validator: (value) {
-        //jika karakter yang dimasukkan kurang dari 6 karakter
         if (value!.isEmpty) {
           return "Password harus diisi";
         }
@@ -76,7 +72,6 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  //Membuat Tombol Login
   Widget _buttonLogin() {
     return ElevatedButton(
         child: const Text("Login"),
@@ -85,7 +80,6 @@ class _LoginPageState extends State<LoginPage> {
         });
   }
 
-  // Membuat menu untuk membuka halaman registrasi
   Widget _menuRegistrasi() {
     return Center(
       child: InkWell(

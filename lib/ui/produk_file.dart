@@ -43,7 +43,6 @@ class _ProdukDetailState extends State<ProdukDetail> {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-        //Tombol Edit
         OutlinedButton(
             child: const Text("EDIT"),
             onPressed: () {
@@ -54,7 +53,6 @@ class _ProdukDetailState extends State<ProdukDetail> {
                             produk: widget.produk!,
                           )));
             }),
-        //Tombol Hapus
         OutlinedButton(
             child: const Text("DELETE"), onPressed: () => confirmHapus()),
       ],
@@ -65,12 +63,10 @@ class _ProdukDetailState extends State<ProdukDetail> {
     AlertDialog alertDialog = AlertDialog(
       content: const Text("Yakin ingin menghapus data ini?"),
       actions: [
-        //tombol hapus
         OutlinedButton(
           child: const Text("Ya"),
           onPressed: () {},
         ),
-        //tombol batal
         OutlinedButton(
           child: const Text("Batal"),
           onPressed: () => Navigator.pop(context),
